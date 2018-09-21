@@ -1,0 +1,17 @@
+{
+  "name": "STEAM",
+  "imgsrc": "steam.png",
+  "description": "Welcome to Rancho Alamitos High School's club of science, technology, engineering, arts, and mathematics!",
+  "announcements": [
+    {
+      "title": "Meetings",
+      "description": "STEAM meetings take place on Tuesdays in Mrs. Perry's room during lunchtime."
+    }
+  ],
+  "links": [
+    {
+      "title": "Facebook Page",
+      "link": "https://www.facebook.com/groups/1408650302522571/"
+    }
+  ]
+}
