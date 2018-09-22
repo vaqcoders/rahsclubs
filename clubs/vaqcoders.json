@@ -1,0 +1,60 @@
+{
+  "name": "Vaqcoders",
+  "imgsrc": "vaqcoders.png",
+  "description": "Welcome to Rancho Alamitos High School's club of computer programming! Dopest club at the Ranch!",
+  "officers": [
+    {
+      "position": "President",
+      "name": "Ethan Davidson",
+      "link": "http://ethandavidson.com/"
+    },
+    {
+      "position": "VP",
+      "name": "Christopher Nguyen"
+    },
+    {
+      "position": "Secretary",
+      "name": "Jason Dang"
+    },
+    {
+      "position": "Treasurer",
+      "name": "Nhan Nguyen"
+    },
+    {
+      "position": "ICC Rep",
+      "name": "Michelle Vu"
+    },
+    {
+      "position": "Publicity Chair",
+      "name": "Andrew Bui"
+    },
+    {
+      "position": "Club Advisor",
+      "name": "Sra. Reyes"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Meetings",
+      "description": "Vaqcoders will meet on Thurdays bi-weekly in room 601 during lunchtime."
+    }
+  ],
+  "links": [
+    {
+      "title": "Website",
+      "link": "https://vaqcoders.github.io/website/"
+    },
+    {
+      "title": "GitHub",
+      "link": "https://github.com/vaqcoders"
+    },
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/groups/338107380265743/"
+    },
+    {
+      "title": "Discord",
+      "link": "https://discord.gg/QjEEs7V"
+    }
+  ]
+}
