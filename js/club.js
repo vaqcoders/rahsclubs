@@ -6,6 +6,16 @@ class Club {
     this.el;
   }
 
+  containsKeyword(keyword) {
+    return this.data.name.toLowerCase().includes(keyword) ||
+      this.data.description.toLowerCase().includes(keyword) ||
+      this.data.officers.some(officer => officer.name.toLowerCase().includes(keyword));
+  }
+
+  toggle(on = true) {
+    this.el.style.display = on ? "flex" : "none";
+  }
+
   async init() {
     await this.fetch();
     this.createElement();
@@ -19,54 +29,81 @@ class Club {
   }
 
   createElement() {
-    let div = document.createElement("div");
-    div.className = "club";
+    let card = document.createElement("div");
+    card.className = "blog-card";
 
-    let img = document.createElement("img");
-    img.src = `cgi-bin/${this.data.imgsrc}`;
+    let meta = document.createElement("div");
+    meta.className = "meta";
 
-    let name = document.createElement("h1");
-    name.innerText = this.data.name;
+    let photo = document.createElement("div");
+    photo.style.backgroundImage = `url(cgi-bin/${this.data.imgsrc})`;
+    photo.className = "photo";
 
-    let announcements = this.data.announcements.reduce((list, cur) => {
+    let officers = this.data.officers.reduce((ul, cur) => {
       let li = document.createElement("li");
+      li.className = "author";
 
-      let heading = document.createElement("b");
-      heading.innerText = cur.title;
+      let a = document.createElement("a");
 
-      let desc = document.createElement("p");
-      desc.innerText = cur.description;
+      a.innerHTML = `<b>${cur.position}</b>: ${cur.name}`;
+      a.href = cur.link || "#";
 
-      li.appendChild(heading);
-      li.appendChild(desc);
-      list.appendChild(li);
+      li.appendChild(a);
+      ul.appendChild(li);
 
-      return list;
+      return ul;
     }, document.createElement("ul"));
+    officers.className = "details";
 
-    let description = document.createElement("p");
-    description.innerText = this.data.description;
-
-    let links = this.data.links.reduce((list, cur) => {
+    let details = this.data.links.reduce((ul, cur) => {
       let li = document.createElement("li");
+      li.className = "author";
 
-      let link = document.createElement("a");
-      link.innerText = cur.title;
-      link.href = cur.link;
+      let a = document.createElement("a");
 
-      li.appendChild(link);
-      list.appendChild(li);
+      a.innerText = cur.title;
+      a.href = cur.link || "#";
 
-      return list;
-    }, document.createElement("ul"));
+      li.appendChild(a);
+      ul.appendChild(li);
 
-    div.appendChild(img);
-    div.appendChild(name);
-    div.appendChild(announcements);
-    div.appendChild(description);
-    div.appendChild(links);
+      return ul;
+    }, officers);
 
-    this.el = div;
+    let description = document.createElement("div");
+    description.className = "description";
+
+    let h1 = document.createElement("h1");
+    h1.innerText = this.data.name;
+
+    let p = document.createElement("p");
+    p.innerText = this.data.description;
+
+    let announcements = this.data.announcements.reduce((div, cur) => {
+      let h2 = document.createElement("h2");
+      let p = document.createElement("p");
+
+      h2.innerText = cur.title;
+      p.innerText = cur.description;
+
+      div.appendChild(h2);
+      div.appendChild(p);
+
+      return div;
+    }, document.createElement("div"));
+    announcements.className = "description";
+
+    description.appendChild(h1);
+    description.appendChild(p);
+    description.appendChild(announcements);
+
+    meta.appendChild(photo);
+    meta.appendChild(details);
+
+    card.appendChild(meta);
+    card.appendChild(description);
+
+    this.el = card;
   }
 
 }
