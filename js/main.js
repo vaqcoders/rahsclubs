@@ -13,7 +13,7 @@ fetch(`clubs/clubs.json`)
   })
   .catch(err => console.error(`Fetching ${this.name}.json was unsuccessful.`));
 
-document.getElementById("search").onchange = event => {
+document.getElementById("search").onchange = (event) => {
   const keyword = event.path[0].value.toLowerCase();
   let noResults = true;
   clubs.forEach(club => {
