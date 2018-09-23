@@ -26,8 +26,8 @@ p {
 }
 
 .content {
-  margin-left: 400px;
-  margin-top: 175px;
+  margin: 0 auto;
+  margin-top: 25vh;
 }
 
 header {
@@ -57,10 +57,45 @@ footer {
   z-index: 2;
 }
 
+#school_logo_header {
+	width: 302px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -151px;
+	z-index: 9;
+} #school_logo_header h1 {
+	background: url(/cgi-bin/bg_logo.png) 0 0 no-repeat;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 302px;
+	z-index: 999;
+	text-align: center;
+} #school_logo_header h1 a, #school_logo_header h1 a:visited, #school_logo_header h1 a:link, #school_logo_header h1 a:active {
+	display: block;
+	font: 34px/1 'averia', serif;
+	color: #283b04;
+	height: 131px;
+	width: 302px;
+	text-decoration: none;
+	padding: 33px 0 0;
+	text-transform: none;
+} #school_logo_header h1 a span {
+	font-size: 24px;
+	display: block;
+  font: 34px/1 'averia', serif;
+	letter-spacing: normal;
+	letter-spacing: 5px;
+	margin: 10px 0 0;
+}
+
 .search {
   position: fixed;
   left: 12vw;
-  height: 10vh;
+  top: 10px;
+  z-index: 3;
+  height: 20px;
 } .clean-slide {
   position: relative;
   display: inline-block;
@@ -97,7 +132,7 @@ footer {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   overflow: hidden;
-  height: 17%;
+  height: 9px;
 } .clean-slide + label:after {
   content: "";
   position: absolute;
