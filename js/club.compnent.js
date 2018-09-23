@@ -1,3 +1,7 @@
+/*
+  Requires JSX and React.js
+*/
+
 class ClubCard extends React.Component {
 
   render() {
