@@ -58,7 +58,7 @@ footer {
 }
 
 .search {
-  position: absolute;
+  position: fixed;
   left: 12vw;
   height: 10vh;
 } .clean-slide {
