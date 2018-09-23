@@ -29,21 +29,21 @@ class Club {
   }
 
   createElement() {
-    let card = document.createElement("div");
+    const card = document.createElement("div");
     card.className = "blog-card";
 
-    let meta = document.createElement("div");
+    const meta = document.createElement("div");
     meta.className = "meta";
 
-    let photo = document.createElement("div");
+    const photo = document.createElement("div");
     photo.style.backgroundImage = `url(cgi-bin/${this.data.imgsrc})`;
     photo.className = "photo";
 
-    let officers = this.data.officers.reduce((ul, cur) => {
-      let li = document.createElement("li");
+    const officers = this.data.officers.reduce((ul, cur) => {
+      const li = document.createElement("li");
       li.className = "author";
 
-      let a = document.createElement("a");
+      const a = document.createElement("a");
 
       a.innerHTML = `<b>${cur.position}</b>: ${cur.name}`;
       a.href = cur.link || "#";
@@ -55,11 +55,11 @@ class Club {
     }, document.createElement("ul"));
     officers.className = "details";
 
-    let details = this.data.links.reduce((ul, cur) => {
-      let li = document.createElement("li");
+    const details = this.data.links.reduce((ul, cur) => {
+      const li = document.createElement("li");
       li.className = "author";
 
-      let a = document.createElement("a");
+      const a = document.createElement("a");
 
       a.innerText = cur.title;
       a.href = cur.link || "#";
@@ -70,18 +70,18 @@ class Club {
       return ul;
     }, officers);
 
-    let description = document.createElement("div");
+    const description = document.createElement("div");
     description.className = "description";
 
-    let h1 = document.createElement("h1");
+    const h1 = document.createElement("h1");
     h1.innerText = this.data.name;
 
-    let p = document.createElement("p");
+    const p = document.createElement("p");
     p.innerText = this.data.description;
 
-    let announcements = this.data.announcements.reduce((div, cur) => {
-      let h2 = document.createElement("h2");
-      let p = document.createElement("p");
+    const announcements = this.data.announcements.reduce((div, cur) => {
+      const h2 = document.createElement("h2");
+      const p = document.createElement("p");
 
       h2.innerText = cur.title;
       p.innerText = cur.description;
