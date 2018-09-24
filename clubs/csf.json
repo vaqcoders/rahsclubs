@@ -1,5 +1,7 @@
 {
   "name": "CSF",
+  "imgsrc": "csf.png",
+  "description": "Welcome to Rancho Alamitos High School's CSF!",
   "officers": [
     {
       "position": "President",
@@ -27,10 +29,10 @@
       "link": "https://www.facebook.com/hakmat.popal"
     }
  ],
- "links": [
-   {
-     "title": "Facebook",
-     "link": "https://www.facebook.com/groups/1905737569469858/"
-   }
- ]
+  "links": [
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/groups/1905737569469858/"
+    }
+  ]
 }
