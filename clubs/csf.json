@@ -29,6 +29,12 @@
       "link": "https://www.facebook.com/hakmat.popal"
     }
  ],
+ "announcements": [
+   {
+     "title": "Meetings",
+     "description": "CSF meetings take place on Fridays in the North Gym during lunchtime."
+   }
+ ],
   "links": [
     {
       "title": "Facebook",
