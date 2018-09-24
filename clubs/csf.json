@@ -1,5 +1,7 @@
 {
   "name": "CSF",
+  "imgsrc": "csf.png",
+  "description": "Welcome to Rancho Alamitos High School's CSF!",
   "officers": [
     {
       "position": "President",
@@ -27,10 +29,16 @@
       "link": "https://www.facebook.com/hakmat.popal"
     }
  ],
- "links": [
+ "announcements": [
    {
-     "title": "Facebook",
-     "link": "https://www.facebook.com/groups/1905737569469858/"
+     "title": "Meetings",
+     "description": "CSF meetings take place on Fridays in the North Gym during lunchtime."
    }
- ]
+ ],
+  "links": [
+    {
+      "title": "Facebook",
+      "link": "https://www.facebook.com/groups/1905737569469858/"
+    }
+  ]
 }
