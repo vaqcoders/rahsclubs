@@ -1,0 +1,36 @@
+{
+  "name": "CSF",
+  "officers": [
+    {
+      "position": "President",
+      "name": "Michelle Vu",
+      "link": "https://www.facebook.com/micheggg"
+    },
+    {
+      "position": "Vice President",
+      "name": "Son Le",
+      "link": "https://www.facebook.com/profile.php?id=100008034821444"
+    },
+    {
+      "position": "Secretary",
+      "name": "Annie Nguyen",
+      "link": "https://www.facebook.com/annie.nguyen.5682944"
+    },
+    {
+      "position": "Treasurer",
+      "name": "Fernanda Amezcua",
+      "link": "https://www.facebook.com/fernanda.amezcua.752"
+    },
+    {
+      "position": "Project Chair",
+      "name": "Hakmat Popal",
+      "link": "https://www.facebook.com/hakmat.popal"
+    }
+ ],
+ "links": [
+   {
+     "title": "Facebook",
+     "link": "https://www.facebook.com/groups/1905737569469858/"
+   }
+ ]
+}
