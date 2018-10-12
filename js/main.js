@@ -48,7 +48,7 @@ function chooseRandomErrorMessage() {
 
 function toggleResponsiveDesign() {
   if (window.navigator.userAgent.toLowerCase().includes("mobile")) {
-    document.querySelector("#content").style.marginTop = "8vh";
+    document.querySelector("#content").style.marginTop = "10vh";
   } else {
     document.querySelector("#content").style.marginTop = "25vh";
   }
