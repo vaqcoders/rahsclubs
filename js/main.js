@@ -1,3 +1,5 @@
+window.onload = window.onresize = toggleResponsiveDesign;
+
 const clubs = [];
 
 fetch(`clubs/clubs.json`)
@@ -6,7 +8,7 @@ fetch(`clubs/clubs.json`)
     json.forEach(club => {
       let gimmeClub = new Club(club);
       gimmeClub.init().then(el => {
-        document.querySelector(".content").appendChild(el);
+        document.querySelector("#content").appendChild(el);
       });
       clubs.push(gimmeClub);
     });
@@ -22,7 +24,7 @@ document.getElementById("search").onchange = (event) => {
       noResults = false;
     } else club.toggle(false);
   });
-  const noResultsEl = document.getElementById("noResults")
+  const noResultsEl = document.querySelector("#noResults");
   noResultsEl.innerText = chooseRandomErrorMessage();
   if (noResults) noResultsEl.style.display = "inherit";
   else noResultsEl.style.display = "none";
@@ -42,4 +44,12 @@ function chooseRandomErrorMessage() {
     "swag master"
   ];
   return `${msgs[Math.floor(Math.random() * msgs.length)]}, ${nouns[Math.floor(Math.random() * nouns.length)]}. No matches :/`;
+}
+
+function toggleResponsiveDesign() {
+  if (window.navigator.userAgent.toLowerCase().includes("mobile")) {
+    document.querySelector("#content").style.marginTop = "8vh";
+  } else {
+    document.querySelector("#content").style.marginTop = "25vh";
+  }
 }

@@ -1,0 +1,39 @@
+{
+  "name": "Stand Up To Cancer",
+  "imgsrc": "sutc.png",
+  "description": "Welcome to Stand Up To Cancer! Rancho Alamitos High School's club of standing up to the big C!",
+  "officers": [
+    {
+      "position": "President",
+      "name": "Sehrish Khan"
+    },
+    {
+      "position": "Vice President",
+      "name": "Kevin Dinh"
+    },
+    {
+      "position": "Treasurer",
+      "name": "Hoang An Cao"
+    },
+    {
+      "position": "Secretary",
+      "name": "Jake Tran"
+    },
+    {
+      "position": "Project Chair",
+      "name": "Vicky Tran"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Meetings",
+      "description": "Meetings take place biweekly in room 206 during lunchtime."
+    }
+  ],
+  "links": [
+    {
+      "title": "Facebook Page",
+      "link": "https://www.facebook.com/groups/247802082552047/"
+    }
+  ]
+}
