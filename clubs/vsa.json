@@ -1,0 +1,23 @@
+{
+  "name": "VSA",
+  "imgsrc": "vsa.png",
+  "description": "Welcome to Rancho Alamitos High School's club of Vietnamese Student Association!",
+  "officers": [
+    {
+      "position": "President",
+      "name": Andrew Bui"
+    }
+  ],
+  "announcements": [
+    {
+      "title": "Meetings",
+      "description": "VSA meetings take place on Fridays in room 306 during lunchtime."
+    }
+  ],
+  "links": [
+    {
+      "title": "Facebook Page",
+      "link": "https://m.facebook.com/groups/1535977449771694"
+    }
+  ]
+}
