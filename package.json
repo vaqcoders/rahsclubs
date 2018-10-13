@@ -1,0 +1,32 @@
+{
+  "name": "rahsclubs",
+  "version": "1.0.0",
+  "description": "An informational guide to the clubs at Rancho Alamitos High School",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaqcoders/rahsclubs.git"
+  },
+  "keywords": [
+    "club",
+    "clubs",
+    "rahs",
+    "rancho",
+    "alamitos",
+    "highschool",
+    "high",
+    "json"
+  ],
+  "author": "Vaqcoders",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaqcoders/rahsclubs/issues"
+  },
+  "homepage": "https://github.com/vaqcoders/rahsclubs#readme",
+  "dependencies": {
+    "fullcalendar": "^3.9.0"
+  }
+}
