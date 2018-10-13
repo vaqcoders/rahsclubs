@@ -46,6 +46,20 @@ function chooseRandomErrorMessage() {
   return `${msgs[Math.floor(Math.random() * msgs.length)]}, ${nouns[Math.floor(Math.random() * nouns.length)]}. No matches :/`;
 }
 
+function openNav() {
+  document.getElementById("mySidenav").style.width = "50vw";
+  window.setTimeout(() => {
+    $('#calendar').fullCalendar({
+      eventClick: evt => Ply.dialog("confirm", evt.id || evt.title),
+      events: "calendar/events.json"
+    });
+  }, 0.5 * 1000);
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+
 function toggleResponsiveDesign() {
   if (window.navigator.userAgent.toLowerCase().includes("mobile")) {
     document.querySelector("#content").style.marginTop = "10vh";

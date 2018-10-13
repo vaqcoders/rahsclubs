@@ -66,6 +66,58 @@ footer {
   z-index: 2;
 }
 
+#calendar {
+  width: 80%;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5%;
+  height: 75%;
+}
+
+.fc-content {
+  font-size: 0.4em;
+} .fc-content:hover {
+  overflow: visible;
+} .fc-event, .fc-event-dot {
+  background-color: #283B04;
+} .fc-title {
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.95);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  overflow-y: hidden;
+} .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+} .sidenav a:hover {
+  color: #f1f1f1;
+} .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+} @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
 #school_logo_header {
 	width: 20vw;
 	position: absolute;
@@ -97,6 +149,19 @@ footer {
 	letter-spacing: normal;
 	letter-spacing: 5px;
 	margin: 10px 0 0;
+}
+
+#calendar-icon {
+  position: fixed;
+  left: 4.5vw;
+  top: 10px;
+  z-index: 3;
+  width: 30px;
+  cursor: pointer;
+} #calendar-icon:hover {
+  -webkit-transition: filter 1s ease-in-out; /* Safari */
+  transition: filter 1s ease-in-out;
+  filter: blur(1px);
 }
 
 .search {

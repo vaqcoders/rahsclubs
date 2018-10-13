@@ -7,11 +7,14 @@
   <link rel="shortcut icon" type="image/x-icon" href="cgi-bin/rahs.ico">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/cards.css">
-<!--
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
-  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
--->
+
+  <link rel="stylesheet" href="lib/fullcalendar.css">
+  <link rel="stylesheet" href="lib/ply.css">
+  <script src="lib/moment.js"></script>
+  <script src="lib/jquery.js"></script>
+  <script src="lib/fullcalendar.js"></script>
+  <script src="lib/ply.js"></script>
+
   <script src="js/club.js"></script>
 </head>
 
@@ -28,15 +31,20 @@
   </div>
 </header>
 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div id="calendar"></div>
+</div>
+
+<img src="cgi-bin/calicon.png" id="calendar-icon" onclick="openNav()">
+
 <div class="search">
   <input class="clean-slide" id="search" type="text" placeholder="steam, vsa, vaqcoders, etc"/>
   <label for="search">Search</label>
 </div>
 
 <div id="content">
-
   <div id="noResults" style="display: none;"></div>
-
 </div>
 
 <br><br><br>
